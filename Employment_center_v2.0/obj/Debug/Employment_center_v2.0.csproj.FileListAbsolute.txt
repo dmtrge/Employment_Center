@@ -1,0 +1,17 @@
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\bin\Debug\JobDatabase.mdf
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\bin\Debug\JobDatabase_log.ldf
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\bin\Debug\Employment_center_v2.0.exe.config
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\bin\Debug\Employment_center_v2.0.exe
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\bin\Debug\Employment_center_v2.0.pdb
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\Debug\Employment_center_v2.0.csprojResolveAssemblyReference.cache
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\Debug\Employment_center_v2._0.genform.resources
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\Debug\Employment_center_v2._0.headband.resources
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\Debug\Employment_center_v2._0.Properties.Resources.resources
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\Debug\Employment_center_v2.0.csproj.GenerateResource.Cache
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\Debug\Employment_center_v2.0.exe
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\Debug\Employment_center_v2.0.pdb
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\Debug\Employment_center_v2._0.admin.resources
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\Debug\Employment_center_v2._0.aboutvacanciton.resources
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\Debug\Employment_center_v2._0.adduser.resources
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\Debug\Employment_center_v2._0.search.resources
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\Debug\Employment_center_v2._0.tsearch.resources
