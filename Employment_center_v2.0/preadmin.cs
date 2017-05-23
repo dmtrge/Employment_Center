@@ -19,9 +19,10 @@ namespace Employment_center_v2._0
 
         private void authbtn_Click(object sender, EventArgs e)
         {
-           // if (passwdbox.Text)
+            if (passwdbox.Text=="fihure")
             {
-                ;
+                admin admin = new admin();
+                admin.Show();
             }
         }
     }

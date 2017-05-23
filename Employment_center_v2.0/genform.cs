@@ -11,7 +11,6 @@ using System.Windows.Forms;
 namespace Employment_center_v2._0
 {
     public partial class genform : Form
-        
     {
         public static string id = null;
         public static string profile = null;
@@ -26,70 +25,50 @@ namespace Employment_center_v2._0
         public static string date = null;
         public static string actual = null;
 
+
         public genform()
         {
             InitializeComponent();
-            
         }
-
-
 
         private void genform_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "jobDatabaseDataSet.vacantiondb". При необходимости она может быть перемещена или удалена.
             this.vacantiondbTableAdapter.Fill(this.jobDatabaseDataSet.vacantiondb);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "jobDatabaseDataSet.vacantiondb". При необходимости она может быть перемещена или удалена.
-            this.vacantiondbTableAdapter.Fill(this.jobDatabaseDataSet.vacantiondb);
 
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void панельАдминистратораToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            preadmin preadmin = new preadmin();
+            preadmin.Show();
         }
 
-        private void поискToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_Click(object sender, EventArgs e)
-        {
-           profile = Convert.ToString(dataGridView1.CurrentRow.Cells[1].Value);
-         //dataGridView1.
-
-        }
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            id = Convert.ToString(dataGridView1.CurrentRow.Cells[0].Value);
-             profile = Convert.ToString(dataGridView1.CurrentRow.Cells[1].Value);
-              speciality = Convert.ToString(dataGridView1.CurrentRow.Cells[2].Value);
-             company = Convert.ToString(dataGridView1.CurrentRow.Cells[3].Value);
-            requirements = Convert.ToString(dataGridView1.CurrentRow.Cells[4].Value);
-            salary = Convert.ToString(dataGridView1.CurrentRow.Cells[5].Value);
-            exp = Convert.ToString(dataGridView1.CurrentRow.Cells[6].Value);
-            graph = Convert.ToString(dataGridView1.CurrentRow.Cells[7].Value);
-            date = Convert.ToString(dataGridView1.CurrentRow.Cells[11].Value);
-
-
-
-
-
-
-            aboutvacanciton aboutvacanciton = new aboutvacanciton();
-            aboutvacanciton.Show();
-        }
-
-        private void searchbtn_Click(object sender, EventArgs e)
+        private void поискToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             tsearch tsearch = new tsearch();
             tsearch.Show();
         }
 
-        private void menuStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            AboutBox1 AboutBox1 = new AboutBox1();
+            AboutBox1.Show();
+        }
 
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id = Convert.ToString(dataGridView1.CurrentRow.Cells[0].Value);
+            profile = Convert.ToString(dataGridView1.CurrentRow.Cells[1].Value);
+            speciality = Convert.ToString(dataGridView1.CurrentRow.Cells[2].Value);
+            company = Convert.ToString(dataGridView1.CurrentRow.Cells[3].Value);
+            requirements = Convert.ToString(dataGridView1.CurrentRow.Cells[4].Value);
+            salary = Convert.ToString(dataGridView1.CurrentRow.Cells[5].Value);
+            exp = Convert.ToString(dataGridView1.CurrentRow.Cells[6].Value);
+            graph = Convert.ToString(dataGridView1.CurrentRow.Cells[7].Value);
+            date = Convert.ToString(dataGridView1.CurrentRow.Cells[11].Value);
+            aboutvacanciton aboutvacanciton = new aboutvacanciton();
+            aboutvacanciton.Show();
         }
     }
 }
