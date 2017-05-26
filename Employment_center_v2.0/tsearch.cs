@@ -19,8 +19,13 @@ namespace Employment_center_v2._0
 
         private void button1_Click(object sender, EventArgs e)
         {
-            search search = new search();
-            search.Show();
+            tsearch tsearch = new tsearch();
+            tsearch.Show();
+        }
+
+        private void cancelbtn_Click(object sender, EventArgs e)
+        {
+            Hide();
         }
     }
 }

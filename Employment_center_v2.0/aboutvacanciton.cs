@@ -33,5 +33,10 @@ namespace Employment_center_v2._0
             this.aboutlabel.Text = genform.about;
             this.datelabel.Text = genform.date;
         }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

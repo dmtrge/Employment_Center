@@ -128,7 +128,7 @@
             // 
             // backbtn
             // 
-            this.backbtn.Location = new System.Drawing.Point(642, 552);
+            this.backbtn.Location = new System.Drawing.Point(545, 452);
             this.backbtn.Margin = new System.Windows.Forms.Padding(2);
             this.backbtn.Name = "backbtn";
             this.backbtn.Size = new System.Drawing.Size(56, 27);
@@ -220,7 +220,7 @@
             // 
             // addbtn
             // 
-            this.addbtn.Location = new System.Drawing.Point(529, 552);
+            this.addbtn.Location = new System.Drawing.Point(432, 452);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(108, 26);
             this.addbtn.TabIndex = 22;
@@ -237,7 +237,7 @@
             // 
             // adddoc
             // 
-            this.adddoc.Location = new System.Drawing.Point(247, 552);
+            this.adddoc.Location = new System.Drawing.Point(150, 452);
             this.adddoc.Name = "adddoc";
             this.adddoc.Size = new System.Drawing.Size(122, 26);
             this.adddoc.TabIndex = 24;
@@ -246,7 +246,7 @@
             // 
             // adduserbtn
             // 
-            this.adduserbtn.Location = new System.Drawing.Point(384, 552);
+            this.adduserbtn.Location = new System.Drawing.Point(287, 452);
             this.adduserbtn.Name = "adduserbtn";
             this.adduserbtn.Size = new System.Drawing.Size(139, 26);
             this.adduserbtn.TabIndex = 25;
@@ -267,7 +267,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 590);
+            this.ClientSize = new System.Drawing.Size(621, 498);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.adduserbtn);
             this.Controls.Add(this.adddoc);
@@ -292,6 +292,7 @@
             this.Controls.Add(this.companytbox);
             this.Controls.Add(this.specialitytbox);
             this.Controls.Add(this.profiletbox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "admin";
             this.Text = "Окно администратора";

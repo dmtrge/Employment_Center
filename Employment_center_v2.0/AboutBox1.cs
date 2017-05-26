@@ -101,5 +101,10 @@ namespace Employment_center_v2._0
             }
         }
         #endregion
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -66,6 +66,12 @@
     <Compile Include="AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
+    <Compile Include="aboutclients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutclients.Designer.cs">
+      <DependentUpon>aboutclients.cs</DependentUpon>
+    </Compile>
     <Compile Include="aboutvacanciton.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </Compile>
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aboutclients.resx">
+      <DependentUpon>aboutclients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="aboutvacanciton.resx">
       <DependentUpon>aboutvacanciton.cs</DependentUpon>

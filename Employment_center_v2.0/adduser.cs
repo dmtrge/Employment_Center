@@ -32,8 +32,17 @@ namespace Employment_center_v2._0
                 myConnection.Open();
                 var sqlCommand = new SqlCommand("INSERT INTO users firstname, lastname,surname,telephone,IDpas , education, address, vacantion, note,datereg) VALUES(@firstname, @lastname,@surname,@telephone,@IDpas , @education, @address, @vacantion, @note,@datereg)", myConnection);
 
-                sqlCommand.Parameters.Add(new SqlParameter("@firstname", ));
-               
+                sqlCommand.Parameters.Add(new SqlParameter("@firstname", firstnamebox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@lastname", lastnamebox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@surname", surnamebox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@telephone", telephonebox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@IDpas", IDpasbox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@education", educationbox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@address", addressbox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@vacantion", vacantionbox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@note", notebox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@datereg", dateTimePicker1.Value));
+
                 MessageBox.Show("Запись создана успешнно");
                 this.Close();
 
@@ -47,6 +56,5 @@ namespace Employment_center_v2._0
                 }
             }
         }
-    }
     }
 }

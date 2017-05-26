@@ -25,5 +25,10 @@ namespace Employment_center_v2._0
                 admin.Show();
             }
         }
+
+        private void cancelbtn_Click(object sender, EventArgs e)
+        {
+            Hide();
+        }
     }
 }

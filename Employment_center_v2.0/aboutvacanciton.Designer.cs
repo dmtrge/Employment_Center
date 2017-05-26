@@ -52,6 +52,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.close = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // profilelab
@@ -270,11 +271,22 @@
             this.label12.TabIndex = 12;
             this.label12.Text = "Профиль";
             // 
+            // close
+            // 
+            this.close.Location = new System.Drawing.Point(276, 488);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(75, 23);
+            this.close.TabIndex = 24;
+            this.close.Text = "Завалить";
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
             // aboutvacanciton
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 556);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -299,7 +311,9 @@
             this.Controls.Add(this.speclabel);
             this.Controls.Add(this.idlabel);
             this.Controls.Add(this.profilelab);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "aboutvacanciton";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "aboutvacanciton";
             this.Load += new System.EventHandler(this.aboutvacanciton_Load);
             this.ResumeLayout(false);
@@ -333,5 +347,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button close;
     }
 }
