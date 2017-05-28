@@ -20,18 +20,18 @@ namespace Employment_center_v2._0
 
         private void vacantion_edit_Load(object sender, EventArgs e)
         {
-            genform genform = new genform();
-            this.idlabel.Text = genform.id;
-            this.profilelab.Text = genform.profile;
-            this.speclabel.Text = genform.speciality;
-            this.complabel.Text = genform.company;
-            this.reqlabel.Text = genform.requirements;
-            this.sallarylabel.Text = genform.salary;
-            this.explabel.Text = genform.exp;
-            this.graphlabel.Text = genform.graph;
-            this.localionlabel.Text = genform.location;
-            this.aboutlabel.Text = genform.about;
-            this.datelabel.Text = genform.date;
+            choose_vacanctions choose_vacanctions = new choose_vacanctions();
+            this.idlabel.Text = choose_vacanctions.id;
+            this.profilelab.Text = choose_vacanctions.profile;
+            this.speclabel.Text = choose_vacanctions.speciality;
+            this.complabel.Text = choose_vacanctions.company;
+            this.reqlabel.Text = choose_vacanctions.requirements;
+            this.sallarylabel.Text = choose_vacanctions.salary;
+            this.explabel.Text = choose_vacanctions.exp;
+            this.graphlabel.Text = choose_vacanctions.graph;
+            this.localionlabel.Text = choose_vacanctions.location;
+            this.aboutlabel.Text = choose_vacanctions.about;
+            this.datelabel.Text = choose_vacanctions.date;
         }
 
         private void editbtn_Click(object sender, EventArgs e)
