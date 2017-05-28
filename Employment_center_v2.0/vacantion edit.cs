@@ -63,6 +63,11 @@ namespace Employment_center_v2._0
                 sqlCommand.Parameters.Add(new SqlParameter("@location", locationbox.Text));*/
             }
         }
+
+        private void closebtn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
 

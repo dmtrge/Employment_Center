@@ -75,8 +75,8 @@ namespace Employment_center_v2._0
 
         private void вакансииToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            vacantion_edit vacantion_edit = new vacantion_edit();
-            vacantion_edit.Show();
+            choose_vacanctions choose_vacanctions = new choose_vacanctions();
+            choose_vacanctions.Show();
         }
 
         private void списокКлиентовToolStripMenuItem_Click(object sender, EventArgs e)

@@ -259,6 +259,7 @@
             this.closebtn.TabIndex = 37;
             this.closebtn.Text = "Отмена";
             this.closebtn.UseVisualStyleBackColor = true;
+            this.closebtn.Click += new System.EventHandler(this.closebtn_Click);
             // 
             // datebox
             // 

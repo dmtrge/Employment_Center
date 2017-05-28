@@ -57,8 +57,8 @@
             this.вакансиюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.редактироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вакансииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.списокКлиентовToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.анкетыКлиентовToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.списокКлиентовToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -285,7 +285,7 @@
             // клиентаToolStripMenuItem
             // 
             this.клиентаToolStripMenuItem.Name = "клиентаToolStripMenuItem";
-            this.клиентаToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.клиентаToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.клиентаToolStripMenuItem.Text = "Клиента";
             this.клиентаToolStripMenuItem.Click += new System.EventHandler(this.клиентаToolStripMenuItem_Click);
             // 
@@ -307,9 +307,15 @@
             // вакансииToolStripMenuItem
             // 
             this.вакансииToolStripMenuItem.Name = "вакансииToolStripMenuItem";
-            this.вакансииToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.вакансииToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.вакансииToolStripMenuItem.Text = "Вакансии";
             this.вакансииToolStripMenuItem.Click += new System.EventHandler(this.вакансииToolStripMenuItem_Click);
+            // 
+            // анкетыКлиентовToolStripMenuItem
+            // 
+            this.анкетыКлиентовToolStripMenuItem.Name = "анкетыКлиентовToolStripMenuItem";
+            this.анкетыКлиентовToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.анкетыКлиентовToolStripMenuItem.Text = "Анкеты клиентов";
             // 
             // списокКлиентовToolStripMenuItem
             // 
@@ -317,12 +323,6 @@
             this.списокКлиентовToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
             this.списокКлиентовToolStripMenuItem.Text = "Список клиентов";
             this.списокКлиентовToolStripMenuItem.Click += new System.EventHandler(this.списокКлиентовToolStripMenuItem_Click);
-            // 
-            // анкетыКлиентовToolStripMenuItem
-            // 
-            this.анкетыКлиентовToolStripMenuItem.Name = "анкетыКлиентовToolStripMenuItem";
-            this.анкетыКлиентовToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.анкетыКлиентовToolStripMenuItem.Text = "Анкеты клиентов";
             // 
             // admin
             // 
@@ -353,7 +353,7 @@
             this.Controls.Add(this.specialitytbox);
             this.Controls.Add(this.profiletbox);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "admin";
