@@ -82,5 +82,11 @@ namespace Employment_center_v2._0
             preeditform preeditform = new preeditform();
             preeditform.Show();
         }
+
+        private void вакансииToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            vacantion_edit vacantion_edit = new vacantion_edit();
+            vacantion_edit.Show();
+        }
     }
 }

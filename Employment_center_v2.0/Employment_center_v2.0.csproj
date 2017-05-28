@@ -116,6 +116,12 @@
     <Compile Include="arrayusers.Designer.cs">
       <DependentUpon>arrayusers.cs</DependentUpon>
     </Compile>
+    <Compile Include="choose_vacanctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choose_vacanctions.Designer.cs">
+      <DependentUpon>choose_vacanctions.cs</DependentUpon>
+    </Compile>
     <Compile Include="genform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,12 +144,6 @@
     </Compile>
     <Compile Include="preadmin.Designer.cs">
       <DependentUpon>preadmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="preeditform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="preeditform.Designer.cs">
-      <DependentUpon>preeditform.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -183,6 +183,9 @@
     <EmbeddedResource Include="arrayusers.resx">
       <DependentUpon>arrayusers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="choose_vacanctions.resx">
+      <DependentUpon>choose_vacanctions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="genform.resx">
       <DependentUpon>genform.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,9 +194,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="preadmin.resx">
       <DependentUpon>preadmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="preeditform.resx">
-      <DependentUpon>preeditform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

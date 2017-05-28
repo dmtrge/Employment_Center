@@ -56,5 +56,10 @@ namespace Employment_center_v2._0
                 }
             }
         }
+
+        private void adduser_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

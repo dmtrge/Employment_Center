@@ -54,6 +54,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.usersform = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.клиентаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.вакансиюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.редактироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.вакансииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // profiletbox
@@ -285,6 +292,53 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.добавитьToolStripMenuItem,
+            this.редактироватьToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(680, 24);
+            this.menuStrip1.TabIndex = 30;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // добавитьToolStripMenuItem
+            // 
+            this.добавитьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.клиентаToolStripMenuItem,
+            this.вакансиюToolStripMenuItem});
+            this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
+            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.добавитьToolStripMenuItem.Text = "Добавить";
+            // 
+            // клиентаToolStripMenuItem
+            // 
+            this.клиентаToolStripMenuItem.Name = "клиентаToolStripMenuItem";
+            this.клиентаToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.клиентаToolStripMenuItem.Text = "Клиента";
+            // 
+            // вакансиюToolStripMenuItem
+            // 
+            this.вакансиюToolStripMenuItem.Name = "вакансиюToolStripMenuItem";
+            this.вакансиюToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.вакансиюToolStripMenuItem.Text = "Вакансию";
+            // 
+            // редактироватьToolStripMenuItem
+            // 
+            this.редактироватьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.вакансииToolStripMenuItem});
+            this.редактироватьToolStripMenuItem.Name = "редактироватьToolStripMenuItem";
+            this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
+            this.редактироватьToolStripMenuItem.Text = "Редактировать";
+            // 
+            // вакансииToolStripMenuItem
+            // 
+            this.вакансииToolStripMenuItem.Name = "вакансииToolStripMenuItem";
+            this.вакансииToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.вакансииToolStripMenuItem.Text = "Вакансии";
+            this.вакансииToolStripMenuItem.Click += new System.EventHandler(this.вакансииToolStripMenuItem_Click);
+            // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,10 +370,14 @@
             this.Controls.Add(this.companytbox);
             this.Controls.Add(this.specialitytbox);
             this.Controls.Add(this.profiletbox);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "admin";
             this.Text = "Окно администратора";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,5 +411,11 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button usersform;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem добавитьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem клиентаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem вакансиюToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem редактироватьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem вакансииToolStripMenuItem;
     }
 }

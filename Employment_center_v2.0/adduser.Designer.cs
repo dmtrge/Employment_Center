@@ -263,6 +263,7 @@
             this.Name = "adduser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Добавить клиента";
+            this.Load += new System.EventHandler(this.adduser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
