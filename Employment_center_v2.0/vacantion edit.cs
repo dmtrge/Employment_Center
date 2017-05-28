@@ -43,6 +43,7 @@ namespace Employment_center_v2._0
                 myConnection.Open();
                 var sqlCommand = new SqlCommand("INSERT INTO vacantiondb (id, profile, speciality, company, requirements,salary, exp, graph, location,date ) VALUES(@id, @profile, @speciality, @company, @requirements, @salary, @exp, @graph, @location, @date)", myConnection);
 
+               
                 sqlCommand.Parameters.Add(new SqlParameter("@id", idbox.Text));
                 sqlCommand.Parameters.Add(new SqlParameter("@profile", profilebox.Text));
                 sqlCommand.Parameters.Add(new SqlParameter("@speciality", specialitybox.Text));
