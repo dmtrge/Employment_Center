@@ -53,6 +53,7 @@
             this.adduserbtn = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.usersform = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // profiletbox
@@ -129,7 +130,7 @@
             // 
             // backbtn
             // 
-            this.backbtn.Location = new System.Drawing.Point(545, 452);
+            this.backbtn.Location = new System.Drawing.Point(613, 454);
             this.backbtn.Margin = new System.Windows.Forms.Padding(2);
             this.backbtn.Name = "backbtn";
             this.backbtn.Size = new System.Drawing.Size(56, 27);
@@ -221,7 +222,7 @@
             // 
             // addbtn
             // 
-            this.addbtn.Location = new System.Drawing.Point(432, 452);
+            this.addbtn.Location = new System.Drawing.Point(500, 455);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(108, 26);
             this.addbtn.TabIndex = 22;
@@ -238,7 +239,7 @@
             // 
             // adddoc
             // 
-            this.adddoc.Location = new System.Drawing.Point(64, 452);
+            this.adddoc.Location = new System.Drawing.Point(26, 452);
             this.adddoc.Name = "adddoc";
             this.adddoc.Size = new System.Drawing.Size(122, 26);
             this.adddoc.TabIndex = 24;
@@ -247,7 +248,7 @@
             // 
             // adduserbtn
             // 
-            this.adduserbtn.Location = new System.Drawing.Point(287, 452);
+            this.adduserbtn.Location = new System.Drawing.Point(355, 454);
             this.adduserbtn.Name = "adduserbtn";
             this.adduserbtn.Size = new System.Drawing.Size(139, 26);
             this.adduserbtn.TabIndex = 25;
@@ -266,7 +267,7 @@
             // 
             // usersform
             // 
-            this.usersform.Location = new System.Drawing.Point(192, 454);
+            this.usersform.Location = new System.Drawing.Point(260, 455);
             this.usersform.Name = "usersform";
             this.usersform.Size = new System.Drawing.Size(89, 23);
             this.usersform.TabIndex = 28;
@@ -274,11 +275,22 @@
             this.usersform.UseVisualStyleBackColor = true;
             this.usersform.Click += new System.EventHandler(this.usersform_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(154, 454);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 23);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Редактировать";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(621, 498);
+            this.ClientSize = new System.Drawing.Size(680, 498);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.usersform);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.adduserbtn);
@@ -340,5 +352,6 @@
         private System.Windows.Forms.Button adduserbtn;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button usersform;
+        private System.Windows.Forms.Button button1;
     }
 }

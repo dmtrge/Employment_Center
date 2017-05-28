@@ -277,7 +277,7 @@
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(93, 23);
             this.close.TabIndex = 24;
-            this.close.Text = "Завалить ебло";
+            this.close.Text = "Закрыть табло";
             this.close.UseVisualStyleBackColor = true;
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
@@ -285,7 +285,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 258);
+            this.ClientSize = new System.Drawing.Size(931, 258);
             this.Controls.Add(this.close);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);

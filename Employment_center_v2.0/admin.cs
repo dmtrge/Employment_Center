@@ -76,5 +76,11 @@ namespace Employment_center_v2._0
             arrayusers.Show();
            
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            preeditform preeditform = new preeditform();
+            preeditform.Show();
+        }
     }
 }

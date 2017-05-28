@@ -257,7 +257,7 @@
             this.closebtn.Name = "closebtn";
             this.closebtn.Size = new System.Drawing.Size(91, 23);
             this.closebtn.TabIndex = 23;
-            this.closebtn.Text = "Завалить ебло";
+            this.closebtn.Text = "Закрыть табло";
             this.closebtn.UseVisualStyleBackColor = true;
             this.closebtn.Click += new System.EventHandler(this.closebtn_Click);
             // 

@@ -17,9 +17,10 @@ namespace Employment_center_v2._0
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void vacbtn_Click(object sender, EventArgs e)
         {
-
+            vacantion_edit vacantion_edit = new vacantion_edit();
+            vacantion_edit.Show();
         }
     }
 }
