@@ -25,7 +25,7 @@ namespace Employment_center_v2._0
             }
             form2.Close();
             form2.Dispose();
-            Application.Run(new genform());
+            Application.Run(new choose_vacanctions());
         }
     }
 }

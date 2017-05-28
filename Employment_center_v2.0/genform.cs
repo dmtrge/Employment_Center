@@ -66,7 +66,9 @@ namespace Employment_center_v2._0
             salary = Convert.ToString(dataGridView1.CurrentRow.Cells[5].Value);
             exp = Convert.ToString(dataGridView1.CurrentRow.Cells[6].Value);
             graph = Convert.ToString(dataGridView1.CurrentRow.Cells[7].Value);
-            date = Convert.ToString(dataGridView1.CurrentRow.Cells[11].Value);
+            location = Convert.ToString(dataGridView1.CurrentRow.Cells[8].Value);
+            about = Convert.ToString(dataGridView1.CurrentRow.Cells[9].Value);
+            date = Convert.ToString(dataGridView1.CurrentRow.Cells[10].Value);
             aboutvacanciton aboutvacanciton = new aboutvacanciton();
             aboutvacanciton.Show();
         }

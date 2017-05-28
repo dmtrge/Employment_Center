@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.jobDatabaseDataSet = new Employment_center_v2._0.JobDatabaseDataSet();
+            this.vacantiondbBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vacantiondbTableAdapter = new Employment_center_v2._0.JobDatabaseDataSetTableAdapters.vacantiondbTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.profileDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.specialityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,12 +45,9 @@
             this.aboutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.actualDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vacantiondbBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.jobDatabaseDataSet = new Employment_center_v2._0.JobDatabaseDataSet();
-            this.vacantiondbTableAdapter = new Employment_center_v2._0.JobDatabaseDataSetTableAdapters.vacantiondbTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacantiondbBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobDatabaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vacantiondbBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -74,6 +74,20 @@
             this.dataGridView1.Size = new System.Drawing.Size(1249, 509);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
+            // 
+            // jobDatabaseDataSet
+            // 
+            this.jobDatabaseDataSet.DataSetName = "JobDatabaseDataSet";
+            this.jobDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vacantiondbBindingSource
+            // 
+            this.vacantiondbBindingSource.DataMember = "vacantiondb";
+            this.vacantiondbBindingSource.DataSource = this.jobDatabaseDataSet;
+            // 
+            // vacantiondbTableAdapter
+            // 
+            this.vacantiondbTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -148,20 +162,6 @@
             this.actualDataGridViewTextBoxColumn.HeaderText = "actual";
             this.actualDataGridViewTextBoxColumn.Name = "actualDataGridViewTextBoxColumn";
             // 
-            // vacantiondbBindingSource
-            // 
-            this.vacantiondbBindingSource.DataMember = "vacantiondb";
-            this.vacantiondbBindingSource.DataSource = this.jobDatabaseDataSet;
-            // 
-            // jobDatabaseDataSet
-            // 
-            this.jobDatabaseDataSet.DataSetName = "JobDatabaseDataSet";
-            this.jobDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vacantiondbTableAdapter
-            // 
-            this.vacantiondbTableAdapter.ClearBeforeFill = true;
-            // 
             // choose_vacanctions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,8 +173,8 @@
             this.Load += new System.EventHandler(this.choose_vacansion_Load);
             this.Click += new System.EventHandler(this.choose_vacansion_Click);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacantiondbBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobDatabaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vacantiondbBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -12,13 +12,31 @@ namespace Employment_center_v2._0
 {
     public partial class choose_vacanctions : Form
     {
+        public static string id = null;
+        public static string profile = null;
+        public static string speciality = null;
+        public static string company = null;
+        public static string requirements = null;
+        public static string salary = null;
+        public static string exp = null;
+        public static string graph = null;
+        public static string location = null;
+        public static string about = null;
+        public static string date = null;
+        public static string actual = null;
+
         public choose_vacanctions()
         {
+
             InitializeComponent();
         }
 
         private void choose_vacansion_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "jobDatabaseDataSet.vacantiondb". При необходимости она может быть перемещена или удалена.
+            this.vacantiondbTableAdapter.Fill(this.jobDatabaseDataSet.vacantiondb);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "jobDatabaseDataSet.vacantiondb". При необходимости она может быть перемещена или удалена.
+            this.vacantiondbTableAdapter.Fill(this.jobDatabaseDataSet.vacantiondb);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "jobDatabaseDataSet.vacantiondb". При необходимости она может быть перемещена или удалена.
             this.vacantiondbTableAdapter.Fill(this.jobDatabaseDataSet.vacantiondb);
 
@@ -31,17 +49,19 @@ namespace Employment_center_v2._0
 
         private void dataGridView1_Click(object sender, EventArgs e)
         {
-            this.idlabel.Text = genform.id;
-            this.profilelab.Text = genform.profile;
-            this.speclabel.Text = genform.speciality;
-            this.complabel.Text = genform.company;
-            this.reqlabel.Text = genform.requirements;
-            this.sallarylabel.Text = genform.salary;
-            this.explabel.Text = genform.exp;
-            this.graphlabel.Text = genform.graph;
-            this.localionlabel.Text = genform.location;
-            this.aboutlabel.Text = genform.about;
-            this.datelabel.Text
+            id = Convert.ToString(dataGridView1.CurrentRow.Cells[0].Value);
+            profile = Convert.ToString(dataGridView1.CurrentRow.Cells[1].Value);
+            speciality = Convert.ToString(dataGridView1.CurrentRow.Cells[2].Value);
+            company = Convert.ToString(dataGridView1.CurrentRow.Cells[3].Value);
+            requirements = Convert.ToString(dataGridView1.CurrentRow.Cells[4].Value);
+            salary = Convert.ToString(dataGridView1.CurrentRow.Cells[5].Value);
+            exp = Convert.ToString(dataGridView1.CurrentRow.Cells[6].Value);
+            graph = Convert.ToString(dataGridView1.CurrentRow.Cells[7].Value);
+            location = Convert.ToString(dataGridView1.CurrentRow.Cells[8].Value);
+            about = Convert.ToString(dataGridView1.CurrentRow.Cells[9].Value);
+            date = Convert.ToString(dataGridView1.CurrentRow.Cells[10].Value);
+            vacantion_edit vacantion_edit = new vacantion_edit();
+            vacantion_edit.Show();
         }
     }
 }
