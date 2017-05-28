@@ -20,9 +20,9 @@ namespace Employment_center_v2._0
 
         private void backbtn_Click(object sender, EventArgs e)
         {
-            headband headband = new headband();
+          // genform genform = new genform();
             this.Close();
-            headband.Show();
+          //  genform.Show();
         }
 
         private void addbtn_Click(object sender, EventArgs e)
@@ -33,6 +33,12 @@ namespace Employment_center_v2._0
             {
                 myConnection.Open(); 
                 var sqlCommand = new SqlCommand("INSERT INTO vacantiondb (profile, speciality, company, requirements,salary, exp, graph, location,date ) VALUES(@profile, @speciality, @company, @requirements, @salary, @exp, @graph, @location, @date)",myConnection);
+
+              /*  if (profiletbox.Text == null)
+                (specialitytbox.Text == null);
+                ((companytbox.Text == "") &&
+                requirementstbox)
+                */
 
                 sqlCommand.Parameters.Add(new SqlParameter("@profile", profiletbox.Text));
                 sqlCommand.Parameters.Add(new SqlParameter("@speciality",specialitytbox.Text));

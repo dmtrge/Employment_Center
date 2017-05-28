@@ -23,6 +23,11 @@ namespace Employment_center_v2._0
             {
                 admin admin = new admin();
                 admin.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Ну ты и лошара!");
             }
         }
 

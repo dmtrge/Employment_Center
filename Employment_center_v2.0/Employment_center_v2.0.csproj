@@ -139,6 +139,12 @@
     <Compile Include="preadmin.Designer.cs">
       <DependentUpon>preadmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="preeditform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="preeditform.Designer.cs">
+      <DependentUpon>preeditform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tsearch.cs">
@@ -146,6 +152,18 @@
     </Compile>
     <Compile Include="tsearch.Designer.cs">
       <DependentUpon>tsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="useredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="useredit.Designer.cs">
+      <DependentUpon>useredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vacantion edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vacantion edit.Designer.cs">
+      <DependentUpon>vacantion edit.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
@@ -174,6 +192,9 @@
     <EmbeddedResource Include="preadmin.resx">
       <DependentUpon>preadmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="preeditform.resx">
+      <DependentUpon>preeditform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -186,6 +207,9 @@
     </Compile>
     <EmbeddedResource Include="tsearch.resx">
       <DependentUpon>tsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vacantion edit.resx">
+      <DependentUpon>vacantion edit.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="JobDatabaseDataSet1.xsc">
       <DependentUpon>JobDatabaseDataSet1.xsd</DependentUpon>

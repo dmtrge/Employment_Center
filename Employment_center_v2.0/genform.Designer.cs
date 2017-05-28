@@ -75,10 +75,10 @@
             this.dateDataGridViewTextBoxColumn,
             this.actualDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.vacantiondbBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 77);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 27);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1250, 520);
+            this.dataGridView1.Size = new System.Drawing.Size(1250, 570);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
