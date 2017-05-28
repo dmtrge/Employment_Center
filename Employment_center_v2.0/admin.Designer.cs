@@ -50,16 +50,15 @@
             this.addbtn = new System.Windows.Forms.Button();
             this.createcal = new System.Windows.Forms.DateTimePicker();
             this.adddoc = new System.Windows.Forms.Button();
-            this.adduserbtn = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.usersform = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.клиентаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вакансиюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.редактироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вакансииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.списокКлиентовToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.анкетыКлиентовToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -246,22 +245,12 @@
             // 
             // adddoc
             // 
-            this.adddoc.Location = new System.Drawing.Point(26, 452);
+            this.adddoc.Location = new System.Drawing.Point(372, 455);
             this.adddoc.Name = "adddoc";
             this.adddoc.Size = new System.Drawing.Size(122, 26);
             this.adddoc.TabIndex = 24;
             this.adddoc.Text = "Составить договор";
             this.adddoc.UseVisualStyleBackColor = true;
-            // 
-            // adduserbtn
-            // 
-            this.adduserbtn.Location = new System.Drawing.Point(355, 454);
-            this.adduserbtn.Name = "adduserbtn";
-            this.adduserbtn.Size = new System.Drawing.Size(139, 26);
-            this.adduserbtn.TabIndex = 25;
-            this.adduserbtn.Text = "Добавить пользователя";
-            this.adduserbtn.UseVisualStyleBackColor = true;
-            this.adduserbtn.Click += new System.EventHandler(this.adduserbtn_Click);
             // 
             // label10
             // 
@@ -272,31 +261,12 @@
             this.label10.TabIndex = 27;
             this.label10.Text = "О должности";
             // 
-            // usersform
-            // 
-            this.usersform.Location = new System.Drawing.Point(260, 455);
-            this.usersform.Name = "usersform";
-            this.usersform.Size = new System.Drawing.Size(89, 23);
-            this.usersform.TabIndex = 28;
-            this.usersform.Text = "Клиенты";
-            this.usersform.UseVisualStyleBackColor = true;
-            this.usersform.Click += new System.EventHandler(this.usersform_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(154, 454);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Редактировать";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.добавитьToolStripMenuItem,
-            this.редактироватьToolStripMenuItem});
+            this.редактироватьToolStripMenuItem,
+            this.списокКлиентовToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(680, 24);
@@ -317,17 +287,19 @@
             this.клиентаToolStripMenuItem.Name = "клиентаToolStripMenuItem";
             this.клиентаToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.клиентаToolStripMenuItem.Text = "Клиента";
+            this.клиентаToolStripMenuItem.Click += new System.EventHandler(this.клиентаToolStripMenuItem_Click);
             // 
             // вакансиюToolStripMenuItem
             // 
             this.вакансиюToolStripMenuItem.Name = "вакансиюToolStripMenuItem";
-            this.вакансиюToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.вакансиюToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.вакансиюToolStripMenuItem.Text = "Вакансию";
             // 
             // редактироватьToolStripMenuItem
             // 
             this.редактироватьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.вакансииToolStripMenuItem});
+            this.вакансииToolStripMenuItem,
+            this.анкетыКлиентовToolStripMenuItem});
             this.редактироватьToolStripMenuItem.Name = "редактироватьToolStripMenuItem";
             this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
             this.редактироватьToolStripMenuItem.Text = "Редактировать";
@@ -335,19 +307,29 @@
             // вакансииToolStripMenuItem
             // 
             this.вакансииToolStripMenuItem.Name = "вакансииToolStripMenuItem";
-            this.вакансииToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.вакансииToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.вакансииToolStripMenuItem.Text = "Вакансии";
             this.вакансииToolStripMenuItem.Click += new System.EventHandler(this.вакансииToolStripMenuItem_Click);
+            // 
+            // списокКлиентовToolStripMenuItem
+            // 
+            this.списокКлиентовToolStripMenuItem.Name = "списокКлиентовToolStripMenuItem";
+            this.списокКлиентовToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.списокКлиентовToolStripMenuItem.Text = "Список клиентов";
+            this.списокКлиентовToolStripMenuItem.Click += new System.EventHandler(this.списокКлиентовToolStripMenuItem_Click);
+            // 
+            // анкетыКлиентовToolStripMenuItem
+            // 
+            this.анкетыКлиентовToolStripMenuItem.Name = "анкетыКлиентовToolStripMenuItem";
+            this.анкетыКлиентовToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.анкетыКлиентовToolStripMenuItem.Text = "Анкеты клиентов";
             // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(680, 498);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.usersform);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.adduserbtn);
             this.Controls.Add(this.adddoc);
             this.Controls.Add(this.createcal);
             this.Controls.Add(this.addbtn);
@@ -407,15 +389,14 @@
         private System.Windows.Forms.Button addbtn;
         private System.Windows.Forms.DateTimePicker createcal;
         private System.Windows.Forms.Button adddoc;
-        private System.Windows.Forms.Button adduserbtn;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button usersform;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem добавитьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem клиентаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem вакансиюToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem редактироватьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem вакансииToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem списокКлиентовToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem анкетыКлиентовToolStripMenuItem;
     }
 }

@@ -63,30 +63,32 @@ namespace Employment_center_v2._0
             }
          }
 
-        private void adduserbtn_Click(object sender, EventArgs e)
-        {
-            adduser adduser = new adduser();
-            adduser.Show();
-
-        }
+        
 
         private void usersform_Click(object sender, EventArgs e)
         {
-            arrayusers arrayusers = new arrayusers();
-            arrayusers.Show();
+            
            
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            preeditform preeditform = new preeditform();
-            preeditform.Show();
-        }
+        
 
         private void вакансииToolStripMenuItem_Click(object sender, EventArgs e)
         {
             vacantion_edit vacantion_edit = new vacantion_edit();
             vacantion_edit.Show();
+        }
+
+        private void списокКлиентовToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            arrayusers arrayusers = new arrayusers();
+            arrayusers.Show();
+        }
+
+        private void клиентаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            adduser adduser = new adduser();
+            adduser.Show();
         }
     }
 }
