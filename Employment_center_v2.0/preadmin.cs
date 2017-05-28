@@ -27,7 +27,7 @@ namespace Employment_center_v2._0
             }
             else
             {
-                MessageBox.Show("Ну ты и лошара!");
+                MessageBox.Show("Пароль неправильный!");
             }
         }
 

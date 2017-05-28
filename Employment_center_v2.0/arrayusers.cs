@@ -48,12 +48,19 @@ namespace Employment_center_v2._0
             lastname = Convert.ToString(dataGridView1.CurrentRow.Cells[2].Value);
             surname = Convert.ToString(dataGridView1.CurrentRow.Cells[3].Value);
             telephone = Convert.ToString(dataGridView1.CurrentRow.Cells[4].Value);
-            IDpas = Convert.ToString(dataGridView1.CurrentRow.Cells[5]);
-            education = Convert.ToString(dataGridView1.CurrentRow.Cells[6]);
-            adress = Convert.ToString(dataGridView1.CurrentRow.Cells[7]);
-            vacantion = Convert.ToString(dataGridView1.CurrentRow.Cells[8]);
-            note = Convert.ToString(dataGridView1.CurrentRow.Cells[9]);
-            datereg = Convert.ToString(dataGridView1.CurrentRow.Cells[10]);
+            IDpas = Convert.ToString(dataGridView1.CurrentRow.Cells[5].Value);
+            education = Convert.ToString(dataGridView1.CurrentRow.Cells[6].Value);
+            adress = Convert.ToString(dataGridView1.CurrentRow.Cells[7].Value);
+            vacantion = Convert.ToString(dataGridView1.CurrentRow.Cells[8].Value);
+            note = Convert.ToString(dataGridView1.CurrentRow.Cells[9].Value);
+            datereg = Convert.ToString(dataGridView1.CurrentRow.Cells[10].Value);
+            aboutclients aboutclients = new aboutclients();
+            aboutclients.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
