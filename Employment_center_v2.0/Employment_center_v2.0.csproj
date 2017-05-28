@@ -110,6 +110,12 @@
     <Compile Include="admin.Designer.cs">
       <DependentUpon>admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="arrayusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arrayusers.Designer.cs">
+      <DependentUpon>arrayusers.cs</DependentUpon>
+    </Compile>
     <Compile Include="genform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="admin.resx">
       <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arrayusers.resx">
+      <DependentUpon>arrayusers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="genform.resx">
       <DependentUpon>genform.cs</DependentUpon>

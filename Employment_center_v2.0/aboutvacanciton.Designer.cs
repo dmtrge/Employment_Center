@@ -275,9 +275,9 @@
             // 
             this.close.Location = new System.Drawing.Point(276, 488);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(75, 23);
+            this.close.Size = new System.Drawing.Size(93, 23);
             this.close.TabIndex = 24;
-            this.close.Text = "Завалить";
+            this.close.Text = "Завалить ебло";
             this.close.UseVisualStyleBackColor = true;
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
