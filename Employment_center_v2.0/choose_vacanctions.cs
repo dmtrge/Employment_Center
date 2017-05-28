@@ -60,6 +60,12 @@ namespace Employment_center_v2._0
             location = Convert.ToString(dataGridView1.CurrentRow.Cells[8].Value);
             about = Convert.ToString(dataGridView1.CurrentRow.Cells[9].Value);
             date = Convert.ToString(dataGridView1.CurrentRow.Cells[10].Value);
+
+
+
+           // id = dataGridView1.CurrentRow.Cells
+
+            MessageBox.Show("Уверены, что хотите редактировать эту запись? ");
             vacantion_edit vacantion_edit = new vacantion_edit();
             vacantion_edit.Show();
         }
