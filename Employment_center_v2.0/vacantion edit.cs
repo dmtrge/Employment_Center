@@ -43,8 +43,14 @@ namespace Employment_center_v2._0
                 myConnection.Open();
                 var sqlCommand = new SqlCommand("INSERT INTO vacantiondb (id, profile, speciality, company, requirements,salary, exp, graph, location,date ) VALUES(@id, @profile, @speciality, @company, @requirements, @salary, @exp, @graph, @location, @date)", myConnection);
 
-               
-                sqlCommand.Parameters.Add(new SqlParameter("@id", idbox.Text));
+                sqlCommand.Parameters.Clear();
+                sqlCommand.CommandText = " SELECT * FROM vacantiondb WHERE id = @id;";
+                    sqlCommand.CommandType = CommandType.Text;
+                sqlCommand.Parameters.AddWithValue("@id",idbox.Text );
+                sqlCommand.ExecuteReader();
+
+
+              /*  sqlCommand.Parameters.Add(new SqlParameter("@id", idbox.Text));
                 sqlCommand.Parameters.Add(new SqlParameter("@profile", profilebox.Text));
                 sqlCommand.Parameters.Add(new SqlParameter("@speciality", specialitybox.Text));
                 sqlCommand.Parameters.Add(new SqlParameter("@company", companybox.Text));
@@ -54,7 +60,7 @@ namespace Employment_center_v2._0
                 sqlCommand.Parameters.Add(new SqlParameter("@about", aboutbox.Text));
                 sqlCommand.Parameters.Add(new SqlParameter("@date", datebox.Value));
                 sqlCommand.Parameters.Add(new SqlParameter("@actual", actualbox.Text));
-                sqlCommand.Parameters.Add(new SqlParameter("@location", locationbox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@location", locationbox.Text));*/
             }
         }
     }
