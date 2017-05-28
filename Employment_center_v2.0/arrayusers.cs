@@ -38,6 +38,11 @@ namespace Employment_center_v2._0
 
         private void dataGridView1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
             id = Convert.ToString(dataGridView1.CurrentRow.Cells[0].Value);
             firstname = Convert.ToString(dataGridView1.CurrentRow.Cells[1].Value);
             lastname = Convert.ToString(dataGridView1.CurrentRow.Cells[2].Value);

@@ -208,6 +208,9 @@
     <EmbeddedResource Include="tsearch.resx">
       <DependentUpon>tsearch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="useredit.resx">
+      <DependentUpon>useredit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vacantion edit.resx">
       <DependentUpon>vacantion edit.cs</DependentUpon>
     </EmbeddedResource>

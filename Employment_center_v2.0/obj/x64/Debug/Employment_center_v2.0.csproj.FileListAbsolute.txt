@@ -20,3 +20,4 @@ C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2
 C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\x64\Debug\Employment_center_v2.0.pdb
 C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\x64\Debug\Employment_center_v2._0.preeditform.resources
 C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\x64\Debug\Employment_center_v2._0.vacantion_edit.resources
+C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\obj\x64\Debug\Employment_center_v2._0.useredit.resources

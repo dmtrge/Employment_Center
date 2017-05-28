@@ -50,10 +50,10 @@
             this.graphbox = new System.Windows.Forms.TextBox();
             this.locationbox = new System.Windows.Forms.TextBox();
             this.aboutbox = new System.Windows.Forms.TextBox();
-            this.datebox = new System.Windows.Forms.TextBox();
             this.actualbox = new System.Windows.Forms.TextBox();
             this.editbtn = new System.Windows.Forms.Button();
             this.closebtn = new System.Windows.Forms.Button();
+            this.datebox = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // actuallabel
@@ -234,13 +234,6 @@
             this.aboutbox.Size = new System.Drawing.Size(231, 20);
             this.aboutbox.TabIndex = 33;
             // 
-            // datebox
-            // 
-            this.datebox.Location = new System.Drawing.Point(225, 262);
-            this.datebox.Name = "datebox";
-            this.datebox.Size = new System.Drawing.Size(231, 20);
-            this.datebox.TabIndex = 34;
-            // 
             // actualbox
             // 
             this.actualbox.Location = new System.Drawing.Point(225, 288);
@@ -267,15 +260,22 @@
             this.closebtn.Text = "Отмена";
             this.closebtn.UseVisualStyleBackColor = true;
             // 
+            // datebox
+            // 
+            this.datebox.Location = new System.Drawing.Point(225, 262);
+            this.datebox.Name = "datebox";
+            this.datebox.Size = new System.Drawing.Size(231, 20);
+            this.datebox.TabIndex = 38;
+            // 
             // vacantion_edit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 419);
+            this.Controls.Add(this.datebox);
             this.Controls.Add(this.closebtn);
             this.Controls.Add(this.editbtn);
             this.Controls.Add(this.actualbox);
-            this.Controls.Add(this.datebox);
             this.Controls.Add(this.aboutbox);
             this.Controls.Add(this.locationbox);
             this.Controls.Add(this.graphbox);
@@ -330,9 +330,9 @@
         private System.Windows.Forms.TextBox graphbox;
         private System.Windows.Forms.TextBox locationbox;
         private System.Windows.Forms.TextBox aboutbox;
-        private System.Windows.Forms.TextBox datebox;
         private System.Windows.Forms.TextBox actualbox;
         private System.Windows.Forms.Button editbtn;
         private System.Windows.Forms.Button closebtn;
+        private System.Windows.Forms.DateTimePicker datebox;
     }
 }

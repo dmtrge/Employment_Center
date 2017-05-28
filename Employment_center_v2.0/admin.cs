@@ -69,5 +69,12 @@ namespace Employment_center_v2._0
             adduser.Show();
 
         }
+
+        private void usersform_Click(object sender, EventArgs e)
+        {
+            arrayusers arrayusers = new arrayusers();
+            arrayusers.Show();
+           
+        }
     }
 }

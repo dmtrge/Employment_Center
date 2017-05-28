@@ -52,6 +52,7 @@
             this.adddoc = new System.Windows.Forms.Button();
             this.adduserbtn = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
+            this.usersform = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // profiletbox
@@ -237,7 +238,7 @@
             // 
             // adddoc
             // 
-            this.adddoc.Location = new System.Drawing.Point(150, 452);
+            this.adddoc.Location = new System.Drawing.Point(64, 452);
             this.adddoc.Name = "adddoc";
             this.adddoc.Size = new System.Drawing.Size(122, 26);
             this.adddoc.TabIndex = 24;
@@ -263,11 +264,22 @@
             this.label10.TabIndex = 27;
             this.label10.Text = "О должности";
             // 
+            // usersform
+            // 
+            this.usersform.Location = new System.Drawing.Point(192, 454);
+            this.usersform.Name = "usersform";
+            this.usersform.Size = new System.Drawing.Size(89, 23);
+            this.usersform.TabIndex = 28;
+            this.usersform.Text = "Клиенты";
+            this.usersform.UseVisualStyleBackColor = true;
+            this.usersform.Click += new System.EventHandler(this.usersform_Click);
+            // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(621, 498);
+            this.Controls.Add(this.usersform);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.adduserbtn);
             this.Controls.Add(this.adddoc);
@@ -327,5 +339,6 @@
         private System.Windows.Forms.Button adddoc;
         private System.Windows.Forms.Button adduserbtn;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button usersform;
     }
 }
