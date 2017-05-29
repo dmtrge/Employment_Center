@@ -90,5 +90,10 @@ namespace Employment_center_v2._0
             adduser adduser = new adduser();
             adduser.Show();
         }
+
+        private void adddoc_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://google.com");
+        }
     }
 }
